@@ -14,9 +14,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="6om-oO-Kn2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" id="kxx-Ls-M2E" customClass="PersonTableViewCell" customModule="FindACrew" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kxx-Ls-M2E" id="QTs-Ca-WN2">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -53,6 +58,11 @@
                                         <constraint firstItem="zAK-fd-hzP" firstAttribute="leading" secondItem="QTs-Ca-WN2" secondAttribute="leadingMargin" id="xb2-8j-Mvb"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birthYearLabel" destination="QRm-yS-wUY" id="mTs-dR-eDR"/>
+                                    <outlet property="genderLabel" destination="WQg-sP-cpK" id="eb0-P0-J1F"/>
+                                    <outlet property="nameLabel" destination="fif-rx-35h" id="fnV-wn-QXq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -61,6 +71,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Find A Crew" id="pwH-XJ-oLx"/>
+                    <connections>
+                        <outlet property="searchBar" destination="6om-oO-Kn2" id="4Sc-9V-Xk2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFw-7G-Ga2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

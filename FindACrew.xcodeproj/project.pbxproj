@@ -14,6 +14,8 @@
 		CEDFFF2B2417F1A500D75537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDFFF292417F1A500D75537 /* LaunchScreen.storyboard */; };
 		CEDFFF332417F74B00D75537 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFFF322417F74B00D75537 /* PersonTableViewCell.swift */; };
 		CEDFFF352417F76700D75537 /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFFF342417F76700D75537 /* PersonSearchTableViewController.swift */; };
+		CEDFFF3C2417F98800D75537 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFFF3B2417F98800D75537 /* Person.swift */; };
+		CEDFFF3E2417FF4900D75537 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFFF3D2417FF4900D75537 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CEDFFF2C2417F1A500D75537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDFFF322417F74B00D75537 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		CEDFFF342417F76700D75537 /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
+		CEDFFF3B2417F98800D75537 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CEDFFF3D2417FF4900D75537 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				CEDFFF382417F80200D75537 /* Application */,
 				CEDFFF392417F82000D75537 /* Storyboards */,
+				CEDFFF3A2417F91500D75537 /* Models */,
 				CEDFFF362417F7CB00D75537 /* View Controllers */,
 				CEDFFF372417F7E500D75537 /* Views */,
 				CEDFFF272417F1A500D75537 /* Assets.xcassets */,
@@ -100,6 +105,15 @@
 				CEDFFF292417F1A500D75537 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CEDFFF3A2417F91500D75537 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFFF3B2417F98800D75537 /* Person.swift */,
+				CEDFFF3D2417FF4900D75537 /* PersonController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDFFF3C2417F98800D75537 /* Person.swift in Sources */,
 				CEDFFF352417F76700D75537 /* PersonSearchTableViewController.swift in Sources */,
 				CEDFFF332417F74B00D75537 /* PersonTableViewCell.swift in Sources */,
 				CEDFFF1F2417F1A200D75537 /* AppDelegate.swift in Sources */,
+				CEDFFF3E2417FF4900D75537 /* PersonController.swift in Sources */,
 				CEDFFF212417F1A200D75537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
